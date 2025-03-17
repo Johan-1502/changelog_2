@@ -16,12 +16,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Generate Changelog
+      - name: Generate Release Notes
         uses: release-drafter/release-drafter@v5
         with:
           config-name: release-drafter.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Append commits to CHANGELOG.md
+        run: |
+          echo "## Commits in this version" >> CHANGELOG.md
+          git log --pretty=format:"- %h %s" --no-merges -n 20 >> CHANGELOG.md
 
       - name: Commit and push changes
         run: |
