@@ -1,18 +1,24 @@
-template: |
-  ## 🚀 Changes in this release
-  $CHANGES
-
 name-template: "v$NEXT_PATCH_VERSION"
 tag-template: "v$NEXT_PATCH_VERSION"
+
 categories:
-  - title: "🚀 Features"
+  - title: "🚀 Nuevas Funcionalidades"
     labels:
       - "feature"
-  - title: "🐛 Bug Fixes"
+  - title: "🐛 Correcciones de Errores"
     labels:
       - "bug"
-  - title: "🛠 Maintenance"
+  - title: "🛠 Mejoras y Mantenimiento"
     labels:
       - "chore"
-change-template: "- $TITLE (#$NUMBER)"
-change-title-escapes: '\<*_&'
+      - "refactor"
+
+change-template: "- $TITLE (#$NUMBER) por @$AUTHOR"
+version-template: "$MAJOR.$MINOR.$PATCH"
+template: |
+  ## Cambios en esta versión ($NEXT_PATCH_VERSION)
+
+  $CHANGES
+
+  **Contribuidores:**  
+  $CONTRIBUTORS
