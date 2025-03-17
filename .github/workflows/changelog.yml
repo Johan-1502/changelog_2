@@ -3,9 +3,9 @@ name: Update Changelog
 on:
   push:
     branches:
-      - master  # Se ejecuta cuando se hace merge a master
+      - master
   release:
-    types: [created]  # Se ejecuta cuando se crea un release
+    types: [created]
 
 jobs:
   update_changelog:
