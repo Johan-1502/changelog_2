@@ -6,4 +6,5 @@
 ## Commits in this version
 - 6788223 feature: Modify yml## Commits in this version
 - f476ed2 Merge branch 'master' of https://github.com/Johan-1502/changelog_2## Versión 
-- 1f2d4fb Feature: Modify DemoAplication and yml
+- 1f2d4fb Feature: Modify DemoAplication and yml## Versión 
+- 8633477 Merge branch 'develop' of https://github.com/Johan-1502/changelog_2 into develop
