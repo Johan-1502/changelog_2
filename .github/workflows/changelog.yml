@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master  # Se ejecuta cuando se hace merge a master
+      - develop  # Se ejecuta cuando se hace merge a master
   release:
     types: [created]  # Se ejecuta cuando se crea un release
 
